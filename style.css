@@ -1,0 +1,41 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+h1 {
+  margin: 5rem;
+}
+
+main {
+  display: grid;
+  /*
+   auto-fit fills the current space 
+  auto-fill will only fill the necessary space
+  https://learncssgrid.com/
+  */
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  /* grid-gap: 1rem; */
+  cursor: pointer;
+}
+
+.card {
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+}
+
+.info {
+  padding: 1rem;
+}
